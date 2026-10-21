@@ -1,0 +1,15 @@
+
+ISSUE WITH DHCP SERVER NOT WORKING
+
+1. i sat the device to DHCP
+2. Then use the command IPCONFIG /renew which gave 
+   DHCP massege couldnt be forwarded
+3. i checked the switch if the port is enabled and if the 
+   Vlans are allowed in the trunk - all was correctl sat
+4. checked switch 0 vlan ,trunk and allowed vlans on the trunk 
+   all was correctly sat
+5. switch 0 is sat as a DHCP server but its a layer 2 switch 
+6. i moved the DHCP pool and excleded address to the router 
+   
+7. then went back to the device and use the command IPCONFIG / renew 
+    and the issue was fixed.
