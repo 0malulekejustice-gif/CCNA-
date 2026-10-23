@@ -1,0 +1,10 @@
+HOW DID I FIX THE ISSUE
+
+1. i first confirmed that all devices are connected
+   and the devices are switched on 
+2. i pinged the default gateways which was successfull
+3  i pinged the next hop device on the path from pc0 and thats where the ping failed
+4. i checked the ip routes on the router R1 where i found that it doest have a route
+   to pc0 network.
+5. The protocol that was used is ospf. so i added a route via ospf
+6. which has fixed the issue and now pc0 can reach pc 1
